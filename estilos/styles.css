@@ -6,19 +6,15 @@
 
 
 .wrapper {
+    box-sizing: border-box;
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
     background-color: #000;
-    display: flex;
-    flex-direction: column;
-
-
 }
 
 nav {
-    margin-top: 10px;
     position: fixed;
     width: 100%;
     height: 2rem;
@@ -26,6 +22,12 @@ nav {
     justify-content: center;
     background-color: rgba(152, 70, 143, 0.905);
 
+}
+
+.logo-net {
+    margin: 90px 0 0 10.5rem;
+    position: absolute;
+    cursor: pointer;
 }
 
 header .header-bg {
@@ -56,8 +58,6 @@ main .container {
     gap: 10px;
     padding: 20px;
     font-size: 20px;
-    border: var(--border);
-    text-transform: capitalize;
 
 }
 
@@ -80,12 +80,26 @@ aside ul li {
     width: 130px;
 }
 
-
-section .container2 {
-    display: block;
-    justify-content: center;
-    margin: 10px;
+main .box-promo {
     padding: 10rem;
+}
+
+main .banner-promo {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+section .familia-conectada {
+    display: flex;
+    gap: 2rem;
+    margin: 0 0 0 5rem;
+}
+
+section .familia-conectada p {
+    color: #fff;
+    width: 300px;
+    font-size: 20px;
 }
 
 section .container2 h2 {
@@ -97,4 +111,56 @@ section .container2 p {
     text-align: center;
     color: #fff;
     font-size: 20px;
+}
+
+aside .contact {
+    display: flex;
+    justify-content: center;
+}
+
+aside .cadastro {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+aside .chekin {
+    margin: 0 7.8rem 0 0;
+}
+
+footer .rodape {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    margin-top: 85rem;
+    width: 100vw;
+    height: 240px;
+    background-color: #262525;
+    border: var(--border);
+    color: #fff;
+
+}
+
+
+footer .contact {
+    margin: 0 0 0 5rem;
+    font-size: 15px;
+}
+
+footer .end {
+    text-align: center;
+    margin: 0 0 0 10rem;
+
+}
+
+footer .cart-credito {
+    padding: 20px;
+    margin: 0 2rem 0 0;
+    text-align: center;
+
+}
+
+aside .praystore {
+    text-align: center;
+    margin: 10rem 0 0 0;
+    padding: 10px;
 }
