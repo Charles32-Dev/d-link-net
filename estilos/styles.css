@@ -1,5 +1,7 @@
 :root {
     --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    --main-color: #d3ad7f;
+    --black: #13131a;
 }
 
 
@@ -9,6 +11,9 @@
     margin: 0;
     padding: 0;
     background-color: #000;
+    display: flex;
+    flex-direction: column;
+
 
 }
 
@@ -19,7 +24,7 @@ nav {
     height: 2rem;
     display: flex;
     justify-content: center;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(152, 70, 143, 0.905);
 
 }
 
@@ -28,13 +33,6 @@ header .header-bg {
     flex-direction: column;
     border: var(--border);
 }
-
-.logo-d-link {
-    display: flex;
-    position: absolute;
-
-}
-
 
 nav ul {
     padding: 0;
@@ -52,54 +50,51 @@ nav ul a {
     text-decoration: none;
 }
 
-header section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: calc(100% - 50px);
-}
-
-header section h2 {
-    text-align: center;
-    color: #fff;
-}
-
-main {
-    margin: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-}
-
-main .container-text {
-    display: flex;
-    padding: 10px;
-    gap: 1rem;
-}
-
 main .container {
     color: #fff;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    font-size: 20px;
+    border: var(--border);
+    text-transform: capitalize;
+
+}
+
+.aside-box {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+aside {
+    border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 2rem;
+    height: 100vh;
+    margin-right: 1.1rem;
+
+}
+
+aside ul li {
+    font-size: 15px;
+    width: 130px;
+}
+
+
+section .container2 {
+    display: block;
+    justify-content: center;
+    margin: 10px;
+    padding: 10rem;
+}
+
+section .container2 h2 {
+    color: #fff;
     text-align: center;
 }
 
-main h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+section .container2 p {
+    text-align: center;
     color: #fff;
-
-}
-
-main section p {
     font-size: 20px;
-}
-
-
-aside {
-    border: 0.2rem solid rgba(255, 255, 255, 0.3);
-    color: #fff;
-    width: 30rem;
-    padding: 2rem;
-
 }
